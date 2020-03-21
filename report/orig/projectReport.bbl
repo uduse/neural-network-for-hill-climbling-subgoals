@@ -1,0 +1,19 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Bulitko \& Brown}{2012}]{flow}
+Bulitko, V., and Brown, M.
+\newblock 2012.
+\newblock Flow maximization as a guide to optimizing performance: A computa-
+  tional model.
+\newblock {\em Advances in Cognitive Systems} 2:239--256.
+
+\bibitem[\protect\citeauthoryear{Bulitko, Sturtevant, \&
+  Kazakevich}{2005}]{Bulitko:05b}
+Bulitko, V.; Sturtevant, N.; and Kazakevich, M.
+\newblock 2005.
+\newblock Speeding up learning in real-time search via automatic state
+  abstraction.
+\newblock In {\em Proceedings of the National Conference on Artificial
+  Intelligence (AAAI)},  1349 -- 1354.
+
+\end{thebibliography}

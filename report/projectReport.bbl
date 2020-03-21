@@ -1,0 +1,67 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Bulitko \& Bj~{\"o} rnsson}{2009}]{knnlrta}
+Bulitko, V., and Bj~{\"o} rnsson, Y.
+\newblock 2009.
+\newblock knn lrta*: Simple subgoaling for real-time search.
+
+\bibitem[\protect\citeauthoryear{Bulitko \& Lee}{2006}]{lrta}
+Bulitko, V., and Lee, G.
+\newblock 2006.
+\newblock Learning in real-time search: A unifying framework.
+\newblock {\em Journal of Artificial Intelligence Research} 25:119--157.
+
+\bibitem[\protect\citeauthoryear{Bulitko \bgroup \em et al.\egroup
+  }{2007}]{dlrta}
+Bulitko, V.; Bj~{\"o} rnsson, Y.; Schaeffer, J.; and Sigmundarson, S.
+\newblock 2007.
+\newblock Dynamic control in path-planning with real-time heuristic search.
+
+\bibitem[\protect\citeauthoryear{Lawrence \& Bulitko}{2010}]{hcdps}
+Lawrence, R., and Bulitko, V.
+\newblock 2010.
+\newblock Taking learning out of real-time heuristic search for video-game
+  pathfinding.
+\newblock In {\em Australasian Joint Conference on Artificial Intelligence},
+  405--414.
+\newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Lelis \bgroup \em et al.\egroup
+  }{2012}]{learning_cost}
+Lelis, L.~H.; Arfaee, S.~J.; Zilles, S.; and Holte, R.~C.
+\newblock 2012.
+\newblock Learning heuristic functions faster by using predicted solution
+  costs.
+\newblock In {\em SOCS}.
+
+\bibitem[\protect\citeauthoryear{Mu~{\~n} oz \bgroup \em et al.\egroup
+  }{2018}]{rtnn}
+Mu~{\~n} oz, F.; Fadic, M.; Hern~{\'a} ndez, C.; and Baier, J.~A.
+\newblock 2018.
+\newblock A neural network for decision making in real-time heuristic search.
+\newblock In {\em Eleventh Annual Symposium on Combinatorial Search}.
+
+\bibitem[\protect\citeauthoryear{Paszke \bgroup \em et al.\egroup
+  }{2019}]{pytorch}
+Paszke, A.; Gross, S.; Massa, F.; Lerer, A.; Bradbury, J.; Chanan, G.; Killeen,
+  T.; Lin, Z.; Gimelshein, N.; Antiga, L.; et~al.
+\newblock 2019.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock In {\em Advances in Neural Information Processing Systems},
+  8024--8035.
+
+\bibitem[\protect\citeauthoryear{Rivera, Baier, \& Hern~{\'a}
+  ndez}{2015}]{weighted_lrta}
+Rivera, N. {\'a}.~s.; Baier, J.~A.; and Hern~{\'a} ndez, C.
+\newblock 2015.
+\newblock Incorporating weights into real-time heuristic search.
+\newblock {\em Artificial Intelligence} 225:1--23.
+
+\bibitem[\protect\citeauthoryear{Sturtevant}{2012}]{benchmarks}
+Sturtevant, N.
+\newblock 2012.
+\newblock Benchmarks for grid-based pathfinding.
+\newblock {\em Transactions on Computational Intelligence and AI in Games}
+  4(2):144 -- 148.
+
+\end{thebibliography}
