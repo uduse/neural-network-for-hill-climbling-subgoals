@@ -1,3 +1,10 @@
+import pathlib
+import numpy as np
+
+from nnhcs.tile_type import TileType
+from nnhcs import Pos
+
+
 class World(object):
     ROAD = 0
     WALL = 1
@@ -62,4 +69,26 @@ class World(object):
             raise ValueError
         else:
             return 1
+
+
 #             return ((source.x - target.x) ** 2 + (source.y - target.y) ** 2) ** 0.5
+
+def get_selected():
+    # use_cache = False
+    use_problems = ["selected"]
+
+    maps_root = pathlib.Path('maps')
+    problems = {}
+    for map_set_root in maps_root.iterdir():
+        if map_set_root.name in use_problems:
+            print(map_set_root)
+            world_set = {}
+            map_set_maps_dir = map_set_root / (map_set_root.name + '-map')
+            for map_path in list(map_set_maps_dir.iterdir()):
+                print(map_path)
+                world = World.from_path(map_path)
+                world_set[world.name] = world
+            print()
+            problems[map_set_root.name] = world_set
+    selected = problems['selected']
+    return selected
