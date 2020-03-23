@@ -19,6 +19,8 @@ torch = "*"
 imageio = "*"
 remote-ikernel = "*"
 nnhcs = {editable = true,path = "."}
+loguru = "*"
+visualdl = "*"
 
 [requires]
 python_version = "3.7.5"
