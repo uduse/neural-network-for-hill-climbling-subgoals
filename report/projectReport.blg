@@ -3,47 +3,50 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: projectReport.aux
 The style file: aaai.bst
 Database file #1: projectReport.bib
-Warning--empty booktitle in knnlrta
-Warning--empty booktitle in dlrta
-You've used 9 entries,
+You're missing a field name---line 44 of file projectReport.bib
+ : 
+ : %    title = {Incorporating weights into real-time heuristic search},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 10 entries,
             2568 wiz_defined-function locations,
-            624 strings with 6172 characters,
-and the built_in function-call counts, 4035 in all, are:
-= -- 422
-> -- 191
-< -- 2
-+ -- 67
-- -- 66
-* -- 317
-:= -- 659
-add.period$ -- 44
-call.type$ -- 9
-change.case$ -- 68
-chr.to.int$ -- 9
-cite$ -- 11
-duplicate$ -- 156
-empty$ -- 279
-format.name$ -- 80
-if$ -- 833
+            633 strings with 6398 characters,
+and the built_in function-call counts, 4633 in all, are:
+= -- 488
+> -- 229
+< -- 3
++ -- 81
+- -- 80
+* -- 372
+:= -- 758
+add.period$ -- 51
+call.type$ -- 10
+change.case$ -- 79
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 172
+empty$ -- 298
+format.name$ -- 94
+if$ -- 949
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 56
-num.names$ -- 27
-pop$ -- 70
+missing$ -- 10
+newline$ -- 64
+num.names$ -- 30
+pop$ -- 71
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 89
 quote$ -- 0
-skip$ -- 115
+skip$ -- 141
 stack$ -- 0
-substring$ -- 190
-swap$ -- 36
-text.length$ -- 2
+substring$ -- 225
+swap$ -- 47
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
-warning$ -- 2
-while$ -- 30
+type$ -- 80
+warning$ -- 0
+while$ -- 35
 width$ -- 12
-write$ -- 122
-(There were 2 warnings)
+write$ -- 140
+(There was 1 error message)

@@ -8,10 +8,10 @@ class Pos(object):
 
     @classmethod
     def heuristic(cls, a, b):
-        return cls.euclidean(a, b)
+        return cls.manhattan(a, b)
 
     @classmethod
-    def hamming(cls, a, b):
+    def manhattan(cls, a, b):
         return abs(a.x - b.x) + abs(a.y - b.y)
 
     @classmethod

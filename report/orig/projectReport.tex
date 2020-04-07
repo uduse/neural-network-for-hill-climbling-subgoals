@@ -21,7 +21,8 @@
 \newtheorem{lemma}{Lemma}[section]
 \newtheorem{col}{Corollary}
 
-\newcommand{\bt}{\begin{theorem}\em}
+\newcommand{\bt}{\begin{theorem}
+                     \em}
 \newcommand{\et}{\end{theorem}}
 \newcommand{\Qed}{$\blacksquare$}
 \newcommand{\qed}{$\Box$}
@@ -67,7 +68,7 @@ Introduce and motivate the problem. State the main idea of your solution approac
 
 \section{Introduction}
 
-Informally introduce and motivate your problem here. 
+Informally introduce and motivate your problem here.
 
 \section{Problem Formulation}
 
@@ -75,7 +76,7 @@ Define the problem formally, including the performance criteria motivated by the
 
 \section{Related Work}
 
-Review related research and discuss its shortfalls with respect to the problem in the previous section. 
+Review related research and discuss its shortfalls with respect to the problem in the previous section.
 
 \section{Proposed Approach}
 
@@ -91,7 +92,7 @@ If you decide to use pseudocode (e.g., Algorithm~\ref{alg:fAlg})\footnote{Reprod
 initialize $Q_1$ to uniformly random values in $[0,1]$\;
 \For{$t = 1,2, \dots, T$}
 {
-determine the amount of deliberation: $n_t \leftarrow \Delta(s_t)$ \; \label{al:amountOfDeliberation} 
+determine the amount of deliberation: $n_t \leftarrow \Delta(s_t)$ \; \label{al:amountOfDeliberation}
 set probe length: $m_t \leftarrow \lfloor \sqrt{n_t} \rfloor$ \; \label{al:probeLength}
 number of probes: $k_t \leftarrow \lfloor \sqrt{n_t} \rfloor$ \; \label{al:probeNumber}
 %
@@ -108,8 +109,8 @@ $\gamma_1 \leftarrow 1$ \;
 \For{$j = 1,\dots,m_t$\label{al:mActionLoop}}
 {
 select probe action: $a'_j \leftarrow \begin{cases}
-a & \text{if $j=1$} \\ 
-\arg \max_{a' \in A} Q'_t(s'_j,a') & \text{otherwise.} 
+a & \text{if $j=1$} \\
+\arg \max_{a' \in A} Q'_t(s'_j,a') & \text{otherwise.}
 \end{cases}$ \; \label{al:selectProbeAction}
 imagine the next state: $s'_{j+1} \leftarrow \Lambda(s'_j,a'_j)$ \;\label{al:applyProbeAction}
 imagine the reward to be collected: $r'_j \leftarrow r(s'_j,a'_j)$ \;\label{al:collectProbeReward}
@@ -132,7 +133,7 @@ update the return estimate using the collected reward and the new state: $Q_{t+1
 }
 \end{algorithm*}
 
-End this section formulating your hypothesis. For instance, ``my algorithm converges faster than X but uses more memory than Y under conditions A,B,C". Link your hypothesis to the motivation of the problem you gave earlier in the paper. For instance, if your hypothesis is about fast real-time operation then you should link it to the requirements of the problem at hand described earlier in the paper. 
+End this section formulating your hypothesis. For instance, ``my algorithm converges faster than X but uses more memory than Y under conditions A,B,C". Link your hypothesis to the motivation of the problem you gave earlier in the paper. For instance, if your hypothesis is about fast real-time operation then you should link it to the requirements of the problem at hand described earlier in the paper.
 
 \section{Theoretical Analysis}
 
@@ -153,7 +154,7 @@ A solid empirical study not only offers some findings but also sheds light on ho
 \end{center}
 \end{figure*}
 
-Complement your figures with compact and readable tables (e.g., Table~\ref{tab:PRLRTS-cummulative}). 
+Complement your figures with compact and readable tables (e.g., Table~\ref{tab:PRLRTS-cummulative}).
 
 \begin{table}[t]
 \caption{\small Typical results averaged over $50$ convergence runs on $10$ maps. The average shortest path length is $59.6$. Reproduced with permission from work by~\citea{Bulitko:05b}.}\label{tab:PRLRTS-cummulative}
@@ -161,10 +162,10 @@ Complement your figures with compact and readable tables (e.g., Table~\ref{tab:P
 {\small \begin{center}
 \begin{tabular}{c|c|c|c}
 \hline
- Algorithm & 1st move time & Conv. travel & Subopt. \\ \hline
+Algorithm & 1st move time & Conv. travel & Subopt. \\ \hline
 A* & 5.01 ms & 186 & 0.0\% \\
-LRTA* & 0.02 ms & 25,868 &  0.0\% \\
-LRTS & 0.93 ms & 555 &  2.07\% \\
+LRTA* & 0.02 ms & 25,868 & 0.0\% \\
+LRTS & 0.93 ms & 555 & 2.07\% \\
 {\bf PR-LRTS} & {\bf 0.95 ms} & {\bf 345} & {\bf 2.19\%} \\
 \hline
 \end{tabular}
@@ -172,10 +173,9 @@ LRTS & 0.93 ms & 555 &  2.07\% \\
 \end{table}
 
 
-
 \section{Discussion}
 
-Discuss your results with respect to the hypotheses you formulated and the demands of the problem at hand. Do not be shy to admit that you do not understand some of the results you obtained. Leave them as open questions for further research. 
+Discuss your results with respect to the hypotheses you formulated and the demands of the problem at hand. Do not be shy to admit that you do not understand some of the results you obtained. Leave them as open questions for further research.
 
 \section{Future Work}
 
@@ -183,12 +183,12 @@ Describe possible extensions (e.g., if you were to take on this project as your 
 
 \section{Conclusions}
 
-Refresh the reader on the problem at hand, motivation, shortfalls of the previous work, ideas of your new algorithm and the results of the empirical study. Briefly re-state the contributions your paper makes here. 
+Refresh the reader on the problem at hand, motivation, shortfalls of the previous work, ideas of your new algorithm and the results of the empirical study. Briefly re-state the contributions your paper makes here.
 
 
 \section*{Acknowledgments}
 
-Acknowledge any help you already received. 
+Acknowledge any help you already received.
 
 \bibliography{projectReport}
 \bibliographystyle{aaai}
