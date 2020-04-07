@@ -4,7 +4,7 @@
 Bulitko, V., and Bj{\"o}rnsson, Y.
 \newblock 2009.
 \newblock {kNN LRTA*}: Simple subgoaling for real-time search.
-\newblock In {\em AIIDE}.
+\newblock In {\em Proceedings of AIIDE}.
 
 \bibitem[\protect\citeauthoryear{Bulitko \bgroup \em et al.\egroup
   }{2007}]{dlrta}
@@ -12,13 +12,13 @@ Bulitko, V.; Bj{\"o}rnsson, Y.; Lustrek, M.; Schaeffer, J.; and Sigmundarson,
   S.
 \newblock 2007.
 \newblock Dynamic control in path-planning with real-time heuristic search.
-\newblock In {\em ICAPS},  49--56.
+\newblock In {\em Proceedings of ICAPS},  49--56.
 
 \bibitem[\protect\citeauthoryear{Cohen \bgroup \em et al.\egroup
   }{2017}]{fastmap}
 Cohen, L.; Uras, T.; Jahangiri, S.; Arunasalam, A.; Koenig, S.; and Kumar, T.
 \newblock 2017.
-\newblock The fastmap algorithm for shortest path computations.
+\newblock The {FastMap} algorithm for shortest path computations.
 \newblock {\em arXiv preprint arXiv:1706.02792}.
 
 \bibitem[\protect\citeauthoryear{Devlin \bgroup \em et al.\egroup
@@ -40,9 +40,17 @@ Lawrence, R., and Bulitko, V.
 \newblock 2010.
 \newblock Taking learning out of real-time heuristic search for video-game
   pathfinding.
-\newblock In {\em Australasian Joint Conference on Artificial Intelligence},
-  405--414.
+\newblock In {\em Proceedings of Australasian Joint Conference on Artificial
+  Intelligence},  405--414.
 \newblock Springer.
+
+\bibitem[\protect\citeauthoryear{Mu{\~n}oz \bgroup \em et al.\egroup
+  }{2018}]{nnrt}
+Mu{\~n}oz, F.; Fadic, M.; Hern{\'a}ndez, C.; and Baier, J.~A.
+\newblock 2018.
+\newblock A neural network for decision making in real-time heuristic search.
+\newblock In {\em Proceedings of Eleventh Annual Symposium on Combinatorial
+  Search}.
 
 \bibitem[\protect\citeauthoryear{Paszke \bgroup \em et al.\egroup
   }{2019}]{pytorch}
@@ -50,8 +58,8 @@ Paszke, A.; Gross, S.; Massa, F.; Lerer, A.; Bradbury, J.; Chanan, G.; Killeen,
   T.; Lin, Z.; Gimelshein, N.; Antiga, L.; et~al.
 \newblock 2019.
 \newblock Pytorch: An imperative style, high-performance deep learning library.
-\newblock In {\em Advances in Neural Information Processing Systems},
-  8024--8035.
+\newblock In {\em Proceedings of Advances in Neural Information Processing
+  Systems},  8024--8035.
 
 \bibitem[\protect\citeauthoryear{Shimbo \& Ishida}{2003}]{wlrta}
 Shimbo, M., and Ishida, T.

@@ -160,6 +160,8 @@
     We also compare the performance of our algorithm to a weighted LRTA* with a weight of 8.
     We select this algorithm as our fallback and as our baseline because of the time constrain of the project.
 
+    NNRT \citea{nnrt} is the only algorithm we know that uses a neural network in planning.
+    However, NNRT uses a neural network to produce next moves, while we produce sub-goals.
 
     \section{Proposed Approach}\label{sec:proposed-approach}
 
@@ -217,7 +219,6 @@
     Ideally, the neural network always produces the optimal sub-goals, and the agent always hill-climbs to the goal.
     However, sometimes the neural network makes a mistake, making the agent takes wrong moves.
     If the agent visits a state more than once, we know that the agent must have made a mistake, so we use the fallback algorithm there instead.
-
 
     \begin{algorithm*}
         \DontPrintSemicolon
@@ -335,7 +336,6 @@
     However, if there are multiple agents searching in the map, only one copy of the neural network is needed.
     Therefore, if there are $K$ agents, the per agent worst-case space complexity is $O(\frac{|S|}{K})$.
 
-
     \section{Empirical Evaluation}\label{sec:empirical-evaluation}
 
     We evaluate NNHCS on the map \texttt{den020d.map}~\ref{fig:map} from \textit{Dragon Age: Origins} (DAO) benchmark \citea{benchmarks}.
@@ -347,7 +347,6 @@
         \centering
         \label{fig:map}
     \end{figure*}
-
 
     We first evaluated the correctness of the sub-goals provided by the neural network.
     We randomly sampled 256 paths and extract 17784 data points like we described in the previous section~\ref{sec:proposed-approach}.
@@ -394,6 +393,11 @@
     This means after roughly running 9475 problems, we are break-even on the time we spent on the offline phase and the time we save on the online phase.
     After 9475 problems, the time we spent on the offline phase starts to payoff.
     As more problems are solved by the algorithm, we asymptotically approach the total time ratio of NNHCS and weighted LRTA* and enjoy a near 45\% speed up over weighted LRTA*.
+
+    Check out \href{https://github.com/uduse/neural-network-for-hill-climbling-subgoals/tree/master/temp_images}{link here} to see the algorithm in action.
+    The green dot is the start state, the red dot is the goal state, and the purple dot is the sub-goal provided by the neural network.
+    When an agent spins around locally, it means the fallback algorithm is taking over.
+
 
     \section{Discussion}\label{sec:discussion}
 

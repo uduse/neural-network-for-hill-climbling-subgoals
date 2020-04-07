@@ -3,50 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: projectReport.aux
 The style file: aaai.bst
 Database file #1: projectReport.bib
-You're missing a field name---line 44 of file projectReport.bib
- : 
- : %    title = {Incorporating weights into real-time heuristic search},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You've used 10 entries,
+You've used 11 entries,
             2568 wiz_defined-function locations,
-            633 strings with 6398 characters,
-and the built_in function-call counts, 4633 in all, are:
-= -- 488
-> -- 229
+            637 strings with 6674 characters,
+and the built_in function-call counts, 5031 in all, are:
+= -- 527
+> -- 252
 < -- 3
-+ -- 81
-- -- 80
-* -- 372
-:= -- 758
-add.period$ -- 51
-call.type$ -- 10
-change.case$ -- 79
-chr.to.int$ -- 10
-cite$ -- 10
-duplicate$ -- 172
-empty$ -- 298
-format.name$ -- 94
-if$ -- 949
++ -- 90
+- -- 88
+* -- 402
+:= -- 827
+add.period$ -- 56
+call.type$ -- 11
+change.case$ -- 87
+chr.to.int$ -- 11
+cite$ -- 11
+duplicate$ -- 188
+empty$ -- 326
+format.name$ -- 103
+if$ -- 1030
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 64
-num.names$ -- 30
-pop$ -- 71
+missing$ -- 11
+newline$ -- 70
+num.names$ -- 33
+pop$ -- 81
 preamble$ -- 1
-purify$ -- 89
+purify$ -- 98
 quote$ -- 0
-skip$ -- 141
+skip$ -- 149
 stack$ -- 0
-substring$ -- 225
-swap$ -- 47
+substring$ -- 231
+swap$ -- 49
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 88
 warning$ -- 0
-while$ -- 35
-width$ -- 12
-write$ -- 140
-(There was 1 error message)
+while$ -- 37
+width$ -- 14
+write$ -- 153
