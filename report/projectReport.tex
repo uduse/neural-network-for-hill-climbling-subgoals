@@ -86,35 +86,23 @@
     Using a case base is common technique in real-time search algorithms for static map pathfinding.
     Algorithms that use a case base include D LRTA* \citea{dlrta}, kNN LRTA* \citea{knnlrta}, and HCDPS \citea{hcdps}.
     All of these algorithms have a offline phase and an online phase.
-    On the offline phase, these algorithms pre-compute information and store the pre-computed information into a custom data structure.
-    On the online phase, these algorithms query their customized data structure by proving the agent's current position and goal.
-    All of these algorithms have to balance the size of the case base and the online performance.
-    More specifically, as the case base grows larger, the agent is more likely to find a similar case in the case base and thus yield better performance.
+    On the offline phase, these algorithms pre-compute information and store the pre-computed information into custom data structures.
+    On the online phase, these algorithms query their customized data structures by proving the agent's current state and the goal state.
+    All of these algorithms have to balance the size of their case bases and their online performance.
+    More specifically, as a case base grows larger, the agent is more likely to find a similar case in the case base and thus yield better performance.
+
     In this paper, we try to replace the use of a case base with the use of a neural network.
     A nice property of neural networks is that a neural network can approximate the mapping of infinitely many inputs and outputs.
-    However, the quality of the mapping is heavily dependent on the capacity of the neural network and the amount of training the neural network has done.
-    We demonstrate that a simple neural network with large enough capacity can approximate such mapping near perfectly.
+    However, the quality of the mapping is heavily dependent on the capacity of the neural network and the amount of training the neural network received.
+    We demonstrate that a simple neural network can approximate the mapping between problems and sub-goals to achieve near perfect sub-optimality.
 
-    In our offline phase, we first sample random pairs of start states and goal states from a selected map.
-    Then, we compute the optimal solution paths for these start and goal pairs.
+    In our offline phase, we sample random problems from a selected map and compute the corresponding optimal solution paths.
     We extract start, goal, hill-climbable sub-goals from the optimal solution paths as training data.
-    We use the training data to train a neural network until it reaches a desired accuracy of predicting sub-goals.
-    In our online phase, the agent switches between querying the next sub-goal and trying to hill-climb to the last sub-goal.
-    There is no guarantee that the sub-goals the network produces are always hill-climbable.
+    We use the training data to train a neural network for a designated number of epochs.
+
+    In our online phase, the agent switches between querying the next sub-goal and trying to hill-climb to the current sub-goal.
+    There is no guarantee that the sub-goals provided by the neural network are always hill-climbable.
     To assure that the algorithm is complete, we fall back to an oracle (weighted LRTA*) when the default algorithm fails.
-
-%    The intuition behind the algorithm is that.
-%
-%    \ref{fig:hcs_heat_map}
-%
-%    \begin{figure}[h]
-%        \includegraphics[width=0.5\textwidth]{hcs_heat_map}
-%        \caption {Distribution of Hill-climbable Sub-goals}
-%        \centering
-%        \label{fig:hcs_heat_map}
-%    \end{figure}
-%
-
 
     \section{Problem Formulation}\label{sec:problem-formulation}
 
@@ -364,9 +352,13 @@
 
     We then compared NNHCS's performance to a weighted LRTA* with a weight of 8.
     We did not compare NNHCS with other algorithm because of the limited time scope of the project.
-    The results are shown in~\ref{tab:table}.
+    We trained the neural network for 100 epochs with roughly 142k data points each epoch.
+    We used a single computer with Intel Core i7-9700K Processor and EVGA GTX 970 GPU for training.
+    The training process took roughly 15 minutes, including processing other data in the offline phase.
+
+    We only evaluated our result on one trained neural network because the process is too time consuming.
     These results are obtained by generating 2000 random problems from the map and run each algorithm on these problems.
-    We only tested with one neural network, so the offline time section has only one data point.
+    The results are shown in~\ref{tab:table}.
 
     \begin{table*}
         \label{tab:table}
